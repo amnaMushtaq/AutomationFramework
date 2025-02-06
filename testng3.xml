@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" verbose="10" parallel="false">
+
+    <test name="Day16">
+        <groups>
+            <run>
+                <include name="Smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Day16_framework.testngBasics"/>
+            <class name="Day15.newWindowTab"/>
+            <class name="Day15.RelativeLoc"/>
+            <class name="Day14.pagination"/>
+            <class name="Day14.filterTable"/>
+
+        </classes>
+    </test>
+</suite>

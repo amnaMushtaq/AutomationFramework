@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" verbose="10" parallel="TestCases.SubmitOrderTest" thread-count="4">
+    <parameter name="URL" value="wwww.google.com"/>
+    <listeners>
+        <listener class-name="Day16_framework.Listeners"></listener>
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="Day16_framework" parallel="classes" thread-count="2">
+        <parameter name="LocalURL" value="wwww.google.com"/>
+        <parameter name="APIKeyUser" value="testuser"/>
+
+        <classes>
+            <class name="Day16_framework.testngBasics">
+<!--                <methods>-->
+<!--                    <include name="test1"/>-->
+<!--                    <include name="test2"/>-->
+<!--                </methods>-->
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="java/Day15">
+        <parameter name="WindowURL" value="https://rahulshettyacademy.com/angularpractice/"/>
+
+        <classes>
+            <class name="Day15.newWindowTab">
+                <methods>
+                    <include name="openNewTab"/>
+                    <!-- <include name="test2"/> -->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

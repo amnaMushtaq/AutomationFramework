@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-02T01:48:08 PKT" name="All Test Suite" finished-at="2025-01-02T01:48:21 PKT" duration-ms="12322">
+    <groups>
+      <group name="Smoke">
+        <method signature="testngBasics.test1(java.lang.String,java.lang.String)[pri:0, instance:Day16_framework.testngBasics@527e5409]" name="test1" class="Day16_framework.testngBasics"/>
+        <method signature="newWindowTab.openNewTab(java.lang.String)[pri:0, instance:Day15.newWindowTab@5c909414]" name="openNewTab" class="Day15.newWindowTab"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2025-01-02T01:48:08 PKT" name="Day16_framework" finished-at="2025-01-02T01:48:08 PKT" duration-ms="109">
+      <class name="Day16_framework.testngBasics">
+        <test-method signature="cart()[pri:0, instance:Day16_framework.testngBasics@527e5409]" started-at="2025-01-02T01:48:08 PKT" name="cart" finished-at="2025-01-02T01:48:08 PKT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cart -->
+        <test-method signature="login()[pri:0, instance:Day16_framework.testngBasics@527e5409]" started-at="2025-01-02T01:48:08 PKT" name="login" finished-at="2025-01-02T01:48:08 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="favorites()[pri:0, instance:Day16_framework.testngBasics@527e5409]" started-at="2025-01-02T01:48:08 PKT" name="favorites" finished-at="2025-01-02T01:48:08 PKT" duration-ms="10" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at Day16_framework.testngBasics.favorites(testngBasics.java:37)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- favorites -->
+        <test-method signature="test1(java.lang.String,java.lang.String)[pri:0, instance:Day16_framework.testngBasics@527e5409]" started-at="2025-01-02T01:48:08 PKT" name="test1" finished-at="2025-01-02T01:48:08 PKT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wwww.google.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testuser]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test2(java.lang.String,java.lang.String)[pri:0, instance:Day16_framework.testngBasics@527e5409]" started-at="2025-01-02T01:48:08 PKT" name="test2" data-provider="getData" finished-at="2025-01-02T01:48:08 PKT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firstusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firstpassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method signature="test2(java.lang.String,java.lang.String)[pri:0, instance:Day16_framework.testngBasics@527e5409]" started-at="2025-01-02T01:48:08 PKT" name="test2" data-provider="getData" finished-at="2025-01-02T01:48:08 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firstusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firstpassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method signature="test2(java.lang.String,java.lang.String)[pri:0, instance:Day16_framework.testngBasics@527e5409]" started-at="2025-01-02T01:48:08 PKT" name="test2" data-provider="getData" finished-at="2025-01-02T01:48:08 PKT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firstusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firstpassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method signature="test3()[pri:0, instance:Day16_framework.testngBasics@527e5409]" started-at="2025-01-02T01:48:08 PKT" name="test3" finished-at="2025-01-02T01:48:08 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method signature="dashboar()[pri:0, instance:Day16_framework.testngBasics@527e5409]" started-at="2025-01-02T01:48:08 PKT" name="dashboar" finished-at="2025-01-02T01:48:08 PKT" depends-on-methods="Day16_framework.testngBasics.login" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dashboar -->
+      </class> <!-- Day16_framework.testngBasics -->
+    </test> <!-- Day16_framework -->
+    <test started-at="2025-01-02T01:48:08 PKT" name="java/Day15" finished-at="2025-01-02T01:48:21 PKT" duration-ms="12322">
+      <class name="Day15.newWindowTab">
+        <test-method signature="openNewTab(java.lang.String)[pri:0, instance:Day15.newWindowTab@5c909414]" started-at="2025-01-02T01:48:08 PKT" name="openNewTab" finished-at="2025-01-02T01:48:21 PKT" duration-ms="12272" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://rahulshettyacademy.com/angularpractice/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openNewTab -->
+      </class> <!-- Day15.newWindowTab -->
+    </test> <!-- java/Day15 -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

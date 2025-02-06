@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="TestCases.SubmitOrderTest" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="10">
+  <parameter name="URL" value="wwww.google.com"/>
+  <listeners>
+    <listener class-name="Day16_framework.Listeners"/>
+  </listeners>
+  <test thread-count="4" parallel="classes" name="Day16_framework(failed)" verbose="10">
+    <parameter name="LocalURL" value="wwww.google.com"/>
+    <parameter name="APIKeyUser" value="testuser"/>
+    <classes>
+      <class name="Day16_framework.testngBasics">
+        <methods>
+          <include name="favorites"/>
+        </methods>
+      </class> <!-- Day16_framework.testngBasics -->
+    </classes>
+  </test> <!-- Day16_framework(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
